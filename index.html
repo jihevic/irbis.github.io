@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дашборд и 3D модель</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Аналитика и 3D визуализация</h1>
+        
+        <!-- Секция с дашбордом Yandex DataLens -->
+        <div class="section">
+            <h2>Дашборд аналитики</h2>
+            <iframe src="https://datalens.yandex/your-dashboard-id?_embedded=1&_no_controls=1&_lang=ru&_theme=light" 
+                    height="600px">
+            </iframe>
+        </div>
+        
+        <!-- Секция с 3D моделью -->
+        <div class="section">
+            <h2>3D модель проекта</h2>
+            <iframe src="https://sketchfab.com/models/MODEL_ID/embed?autostart=1&ui_controls=1" 
+                    height="600px" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
